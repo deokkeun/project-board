@@ -10,8 +10,12 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/board
     username: deokkeun
-    password:
+    password: 
     driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:h2:mem:testdb
+#    username: sa
+#    driver-class-name: org.h2.Driver
+#    http://localhost:8080/h2-console/
   jpa:
     defer-datasource-initialization: true
     hibernate.ddl-auto: create
@@ -19,7 +23,7 @@ spring:
     properties:
       hibernate.format_sql: true
       hibernate.default_batch_fetch_size: 100
-  h2.console.enabled: true
+#  h2.console.enabled: true
   sql.init.mode: always
 
 ---
